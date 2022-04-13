@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
+import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll } from 'react-scroll';
 import {
     Nav,
     NavbarContainer,
@@ -12,42 +14,109 @@ import {
     NavBtnLink} from './NavbarElements';
 
 const Navbar = ({toggle}) => {
+    const [scrollNav, setScrollNav] = useState(false);
+    
+    const changeNav = () => {
+        if(window.scrollY >= 80) {
+            setScrollNav(true);
+        } else {
+            setScrollNav(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [] );
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
   return (
    <>
-     <Nav>
-         <NavbarContainer>
-             <NavLogo to='/'>EcoResort</NavLogo>
-             <MobileIcon onClick={toggle}>
-                 <FaBars />
-             </MobileIcon>
-             <NavMenu>
-                 <NavItem>
-                     <NavLinks to="about">Sobre Nosotros</NavLinks>
-                 </NavItem>
-                 <NavItem>
-                     <NavLinks to="discover">Eventos</NavLinks>
-                 </NavItem>
-                 <NavItem>
-                     <NavLinks to="services">Servicios</NavLinks>
-                 </NavItem>
-                 <NavItem>
-                     <NavLinks to="area">Áreas</NavLinks>
-                 </NavItem>
-                 <NavItem>
-                     <NavLinks to="rooms">Habitaciones</NavLinks>
-                 </NavItem>
-                 <NavItem>
-                     <NavLinks to="gastronomia">Gastronomía</NavLinks>
-                 </NavItem>
-                 <NavItem>
-                     <NavLinks to="contact">Contáctenos</NavLinks>
-                 </NavItem>
-             </NavMenu>
-             <NavBtn>
-                 <NavBtnLink to="/signin">Ingresar</NavBtnLink>
-             </NavBtn>
-         </NavbarContainer>
-     </Nav>
+   <IconContext.Provider value = {{ color: '#fff'}}>
+        <Nav scrollNav={scrollNav}>
+            <NavbarContainer>
+                <NavLogo to='/' onClick={toggleHome}>EcoResort</NavLogo>
+                <MobileIcon onClick={toggle}>
+                    <FaBars />
+                </MobileIcon>
+                <NavMenu>
+                    <NavItem>
+                        <NavLinks 
+                            to="about"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                        >Sobre Nosotros</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks 
+                            to="discover"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                        >Eventos</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks 
+                            to="services"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                        >Servicios</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks 
+                            to="area"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                        >Áreas</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks 
+                            to="rooms"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                        >Habitaciones</NavLinks>
+                    </NavItem>
+                    
+                    <NavItem>
+                        <NavLinks 
+                            to="contact"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                        >Contáctenos</NavLinks>
+                    </NavItem>
+                </NavMenu>
+                <NavBtn>
+                    <NavBtnLink 
+                        to="/signin"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                    >Ingresar</NavBtnLink>
+                </NavBtn>
+            </NavbarContainer>
+        </Nav>
+     </IconContext.Provider>
     </>
   )
 }

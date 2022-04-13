@@ -35,7 +35,13 @@ const HeroSection = () => {
                         onMouseEnter={onHover} 
                         onMouseLeave ={onHover}
                         primary='true'
-                        dark='true'>
+                        dark='true'
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                >        
                 Reserva Ahora {hover ? <ArrowForward/> : <ArrowRight/>}
                 </Button>
             </HeroBtnWrapper>

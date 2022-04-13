@@ -1,7 +1,7 @@
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
-    lightText: false,
+    lightText: true,
     lightTextDesc: true,
     topLine: 'El Manantial',
     headline: 'Nuestra Historia',
