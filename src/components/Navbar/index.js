@@ -74,7 +74,7 @@ const Navbar = ({toggle}) => {
                     </NavItem>
                     <NavItem>
                         <NavLinks 
-                            to="area"
+                            to="areas"
                             smooth={true}
                             duration={500}
                             spy={true}
