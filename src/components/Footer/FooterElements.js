@@ -38,7 +38,7 @@ export const FooterLinksItems = styled.div`
     align-items: flex-start;
     margin: 16px;
     text-align: left;
-    width: 160px;
+    width: 240px;
     box-sizing: border-box;
     color: #fff;
 
@@ -109,6 +109,10 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
     color: #fff;
-    font-size: 24px;
+    font-size: 32px;
 `;
 
+export const FooterIconData = styled.div`
+    color: #fff;
+    font-size: 24px;
+`;

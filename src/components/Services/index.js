@@ -10,7 +10,7 @@ import Icon8 from '../../images/svg/futbol.svg';
 import Icon9 from '../../images/svg/restaurant.svg';
 import Icon10 from '../../images/svg/parrilla.svg';
 import Icon11 from '../../images/svg/bar.svg';
-import Icon12 from '../../images/svg/explorar.svg';
+import Icon12 from '../../images/svg/golf.svg';
 
 import { 
     ServicesContainer,
@@ -106,9 +106,9 @@ const Services = () => {
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon12} />
-                <ServicesH2>Explorar</ServicesH2>
+                <ServicesH2>Golf</ServicesH2>
                 <ServicesP>
-                    Realiza exploración de la hacienda, caminando por sus alrededores, cruzando el puente colgante y utilizando tarabita gigante hasta llegar a los avestruces.
+                    Diviertete en la mini cancha de Golf y realiza exploración de la hacienda, caminando por sus alrededores, cruzando el puente colgante y utilizando tarabita gigante hasta llegar a los avestruces.
                 </ServicesP>
             </ServicesCard>
         </ServicesWrapper>

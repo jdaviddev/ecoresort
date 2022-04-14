@@ -1,6 +1,7 @@
 import React from "react";
 import {animateScroll as scroll} from 'react-scroll'
-import {FaFacebook, FaInstagram, FaTwitter, FaYoutube} from 'react-icons/fa'
+import {FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaWhatsapp, FaMapMarkedAlt} from 'react-icons/fa'
+import {GoMail} from 'react-icons/go'
 import {
     FooterContainer,
     FooterWrap,
@@ -14,7 +15,8 @@ import {
     SocialLogo,
     WebsiteRights,
     SocialIcons,
-    SocialIconLink
+    SocialIconLink,
+    FooterIconData
 } from './FooterElements'
 const Footer = () => {
     const toggleHome = () => {
@@ -27,28 +29,22 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
                 <FooterLinksItems>
-                    <FooterLinkTitle>Sobre Nostros</FooterLinkTitle>
-                    <FooterLink to="/signin">Enlace 1</FooterLink>
-                    <FooterLink to="/signin">Enlace 2</FooterLink>
-                    <FooterLink to="/signin">Enlace 3</FooterLink>
+                    <FooterLinkTitle>Datos de Contacto</FooterLinkTitle>
+                    <FooterLink to="/"><FooterIconData> <FaWhatsapp/> </FooterIconData> Llamadas o WhatsApp: (+593) 998452818</FooterLink>
+                    <FooterLink to="/"><FooterIconData> <GoMail/> </FooterIconData>elmanantialresort@gmail.com</FooterLink>
+                    
                 </FooterLinksItems>
-                <FooterLinksItems>
-                    <FooterLinkTitle>Videos</FooterLinkTitle>
-                    <FooterLink to="/signin">Enlace 1</FooterLink>
-                    <FooterLink to="/signin">Enlace 2</FooterLink>
-                    <FooterLink to="/signin">Enlace 3</FooterLink>
-                </FooterLinksItems>
+                
                 <FooterLinksItems>
                     <FooterLinkTitle>Recomendaciones</FooterLinkTitle>
-                    <FooterLink to="/signin">Enlace 1</FooterLink>
-                    <FooterLink to="/signin">Enlace 2</FooterLink>
-                    <FooterLink to="/signin">Enlace 3</FooterLink>
+                    <FooterLink to="/">Oro Natural House</FooterLink>
+                    <FooterLink to="/">Restaurante Taipa</FooterLink>
+                    
                 </FooterLinksItems>
                 <FooterLinksItems>
-                    <FooterLinkTitle>Redes Sciales</FooterLinkTitle>
-                    <FooterLink to="/signin">Enlace 1</FooterLink>
-                    <FooterLink to="/signin">Enlace 2</FooterLink>
-                    <FooterLink to="/signin">Enlace 3</FooterLink>
+                    <FooterLinkTitle>Ubicación</FooterLinkTitle>
+                    <FooterLink to="/"> <FooterIconData> <FaMapMarkedAlt/> </FooterIconData> Valle de Saracay Km3, vía Piñas (a 3 minutos de la Y de Saracay)</FooterLink>
+                  
                 </FooterLinksItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
@@ -59,10 +55,10 @@ const Footer = () => {
                {// <WebsiteRights> jdaviddev © 2022 </WebsiteRights> 
                }
                 <SocialIcons>
-                    <SocialIconLink href="//www.facebook.com" target="_blank" aria-label="Facebook">
+                    <SocialIconLink href="//www.facebook.com/EcoResort-El-Manantial-112643523898646/" target="_blank" aria-label="Facebook">
                         <FaFacebook />
                     </SocialIconLink>
-                    <SocialIconLink href="//www.instagram.com" target="_blank" aria-label="Instagram">
+                    <SocialIconLink href="//www.instagram.com/ecoresort.elmanantial?igshid=YmMyMTA2M2Y=" target="_blank" aria-label="Instagram">
                         <FaInstagram />
                     </SocialIconLink>
                     <SocialIconLink href="//www.twitter.com" target="_blank" aria-label="Twitter">
