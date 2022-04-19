@@ -8,14 +8,16 @@ import {
 } from 'react-router-dom'
 import Home from './pages';
 import SigninPage from './pages/signin';
+import DayPassPage from './pages/daypass';
 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/"  element={<Home />} />
-        <Route exact path="/signin" element={<SigninPage />} />
+        <Route path="/"  element={<Home />} />
+        <Route path="/signin" element={<SigninPage />} />
+        <Route path="/daypass" element={<DayPassPage />} />
       </Routes>
     </BrowserRouter>
     

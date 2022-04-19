@@ -25,7 +25,7 @@ import {
     ReservaCheckPersona,
     ReservaCheckBtn
 } from './HeroElements'
-const HeroSection = () => {
+const HeroSection = ({isOpen, toggle}) => {
 
     const [hover, setHover] = useState(false)
 
@@ -34,7 +34,7 @@ const HeroSection = () => {
     }
 
   return (
-    <HeroContainer>
+    <HeroContainer isOpen={isOpen} onClick= {toggle}>
         <HeroBg>
             <VideoBg autoPlay loop muted src = {Video} type='video/mp4' />
         </HeroBg>
@@ -44,7 +44,8 @@ const HeroSection = () => {
                         Vive la mejor experiencia con tus seres queridos junto a la naturaleza 
                 </HeroP>
             <HeroBtnWrapper>
-                <Button to="signup" 
+                <Button to="/daypass" 
+                        onClick= {toggle}
                         onMouseEnter={onHover} 
                         onMouseLeave ={onHover}
                         primary='true'
@@ -54,6 +55,7 @@ const HeroSection = () => {
                         spy={true}
                         exact='true'
                         offset={-80}
+                        
                 >        
                 Reserva el pase día {hover ? <ArrowForward/> : <ArrowRight/>}
                 </Button>
