@@ -32,7 +32,7 @@ const SignIn = () => {
             </FormWrap>
         </Container>
     </>
-  )
-}
+  );
+};
 
 export default SignIn

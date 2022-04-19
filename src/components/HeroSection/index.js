@@ -1,6 +1,11 @@
 import React, {useState} from 'react';
 import Video from '../../videos/video.mp4';
 import {Button} from '../ButtonElements';
+import ReactDOM from 'react-dom';
+import '../Styles/PikersCalendar.css';
+import {MuiPickersUtilsProvider} from '@material-ui/pickers';
+import DateFnsUtils from '@date-io/date-fns';
+import CalendarIn from './Calendario';
 import { 
     HeroContainer, 
     HeroBg, 
@@ -10,7 +15,15 @@ import {
     HeroP,
     HeroBtnWrapper,
     ArrowForward,
-    ArrowRight 
+    ArrowRight,
+    HeroReservaH2,
+    Reserva,
+    HeroReservaContainer,
+    ReservaComponente,
+    ReservaCheckIn,
+    ReservaCheckOut,
+    ReservaCheckPersona,
+    ReservaCheckBtn
 } from './HeroElements'
 const HeroSection = () => {
 
@@ -42,10 +55,31 @@ const HeroSection = () => {
                         exact='true'
                         offset={-80}
                 >        
-                Reserva Ahora {hover ? <ArrowForward/> : <ArrowRight/>}
+                Reserva el pase día {hover ? <ArrowForward/> : <ArrowRight/>}
                 </Button>
             </HeroBtnWrapper>
         </HeroContent>
+       {/*<Reserva> 
+            <HeroReservaContainer>
+                <HeroReservaH2>Disfruta de la estadía</HeroReservaH2>
+                <span>Busca tu día ideal para compartir y disfrutar con las personas que más quieres</span>
+                    <ReservaComponente>
+                        <ReservaCheckIn>
+                            Fecha Ingreso
+                        </ReservaCheckIn>
+                        <ReservaCheckOut>
+                            Fecha Salida
+                        </ReservaCheckOut>
+                        <ReservaCheckPersona>
+                            Numero Personas
+                        </ReservaCheckPersona>
+                        <ReservaCheckBtn>
+                            Boton
+                        </ReservaCheckBtn>
+
+                    </ReservaComponente>
+            </HeroReservaContainer>
+  </Reserva> */}
     </HeroContainer>
   )
 }

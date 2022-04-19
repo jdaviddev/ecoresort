@@ -101,3 +101,79 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
 `;
+
+/*----- Sile Form ------*/
+
+export const HeroReservaH2 = styled.h2`
+    margin-top: 20px;
+`;
+
+export const Reserva = styled.div`
+    position: absolute;
+    display: flex;
+    top: 75%;
+    width: 60vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 18vh;
+    boder-radius: 5px;
+    color: #fff;
+
+    @screen and (max-width: 768px){
+        width: 100%;
+        position: none;
+
+    }
+`;
+
+export const Input = styled.input.attrs(props => ({type: "text"}))`
+    display: flex;
+    width: 45vh;
+    align: center;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+    ::placeholder {
+        color: #000;
+    }
+
+`;
+
+export const HeroReservaContainer = styled.div`
+    color: #fff;;
+    border: none;
+    text-align: center;
+
+`;
+
+export const ReservaComponente = styled.div`
+    width: 100%;
+    height: 8vh;
+    margin: 10px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+`;
+
+export const ReservaCheckIn = styled.div`
+    background: red;
+    width: 15vh;
+`;
+
+export const ReservaCheckOut = styled.div`
+    background: #555;
+    width: 15vh;
+`;
+
+export const ReservaCheckPersona = styled.div`
+    background: #000;
+    width: 15vh;
+`;
+
+export const ReservaCheckBtn = styled.div`
+    background: blue;
+    width: 15vh;
+`;

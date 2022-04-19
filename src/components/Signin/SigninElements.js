@@ -5,6 +5,7 @@ export const Container = styled.div`
     min-height: 692px;
     position: fixed;
     bottom: 0;
+    left:0;
     right: 0;
     top: 0;
     z-index: 0;
@@ -19,7 +20,7 @@ export const Container = styled.div`
 export const FormWrap = styled.div`
         height: 100%;
         display: flex;
-        flex-direction: clumn;
+        flex-direction: column;
         justify-content: center;
 
         @media screen and (max-width: 400px) {
@@ -57,7 +58,7 @@ export const Form = styled.form`
         max-width: 400px;
         height: auto;
         width: 100%;
-        a-index: 1;
+        z-index: 1;
         display: grid;
         margin: 0 auto;
         padding: 80px 32px;
