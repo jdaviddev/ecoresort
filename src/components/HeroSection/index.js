@@ -55,7 +55,6 @@ const HeroSection = ({isOpen, toggle}) => {
                         spy={true}
                         exact='true'
                         offset={-80}
-                        
                 >        
                 Reserva el pase día {hover ? <ArrowForward/> : <ArrowRight/>}
                 </Button>

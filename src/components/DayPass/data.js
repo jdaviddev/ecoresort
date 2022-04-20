@@ -1,6 +1,6 @@
-import imgSuite from '../../images/rooms/room1.jpg'
-import imgPareja from '../../images/rooms/room2.jpg'
-import imgAmigos from '../../images/rooms/room3.jpg'
+import imgSuite from '../../images/rooms/room2.jpg'
+import imgPareja from '../../images/rooms/room3.jpg'
+import imgAmigos from '../../images/rooms/room1.jpg'
 import imgNormal from '../../images/rooms/room4.jpg'
 import imgFamiliar from '../../images/rooms/room5.jpg'
 
@@ -11,38 +11,38 @@ const data = {
             img: imgSuite,
             title: 'Suites',
             desc: 'Hermosa habitación con Jacuzzi',
-            price: 35,
+            price: 45,
         },
 
         {
             id: 2,
             img: imgPareja,
-            title: 'Suites',
+            title: 'Habitación Matrimonial',
             desc: 'Hermosa habitación para pareja',
-            price: 35,
+            price: 30,
         },
 
         {
             id: 3,
             img: imgAmigos,
-            title: 'Suites',
+            title: 'Habitación entre Amigos',
             desc: 'Hermosa habitación Amigos',
-            price: 35,
+            price: 27,
         },
 
         {
             id: 4,
             img: imgNormal,
-            title: 'Suites',
-            desc: 'Hermosa habitación familiar pequeña',
-            price: 35,
+            title: 'Habitación para el día',
+            desc: 'Habitación familiar pequeña',
+            price: 27,
         },
-
+   
         {
             id: 5,
             img: imgFamiliar,
-            title: 'Suites',
-            desc: 'Hermosa habitación familiar grande',
+            title: 'Habitaciones Familiares',
+            desc: 'Habitación familiar grande',
             price: 35,
         },
     ]
