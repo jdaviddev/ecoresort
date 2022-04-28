@@ -72,10 +72,10 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
-    background: #fff; //color boton 01bf71
+    background: #01bf71; //color boton 01bf71
     white-space: nowrap;
     padding: 16px 64px;
-    color: #010606; //color texto boton del menu mobile
+    color: rgba(16, 67, 255, 0.7); //color texto boton del menu mobile
     font-size: 16px;
     outline: none;
     border: none;

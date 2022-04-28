@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 export const HeroContainer = styled.div`
@@ -7,7 +8,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 1000px;
     position: relative;
     z-index: 1;
 
@@ -89,7 +90,6 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: colum;
     align-items: center;
-
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
@@ -100,6 +100,10 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
+`;
+
+export const Link = styled.a`
+    text-decoration: none;
 `;
 
 /*----- Sile Form ------*/
