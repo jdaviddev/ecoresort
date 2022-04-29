@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link as LinkR} from 'react-router-dom'
 
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
@@ -90,6 +91,8 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: colum;
     align-items: center;
+    text-decoration: none;
+
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
@@ -102,9 +105,27 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     font-size: 20px;
 `;
 
-export const Link = styled.a`
+export const HeroBtnReservas = styled(LinkR)`
+    border-radius: 50px;
     text-decoration: none;
+    background: #01bf71; //color boton 01bf71
+    white-space: nowrap;
+    padding: 16px 64px;
+    color: rgba(16, 67, 255, 0.7); //color texto boton del menu mobile
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+    }
 `;
+
+
 
 /*----- Sile Form ------*/
 

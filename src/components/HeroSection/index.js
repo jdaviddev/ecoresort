@@ -6,7 +6,6 @@ import '../Styles/PikersCalendar.css';
 import {MuiPickersUtilsProvider} from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
 import CalendarIn from './Calendario';
-import { Link } from 'react-router-dom';
 
 import { 
     HeroContainer, 
@@ -18,6 +17,7 @@ import {
     HeroBtnWrapper,
     ArrowForward,
     ArrowRight,
+    HeroBtnReservas,
     HeroReservaH2,
     Reserva,
     HeroReservaContainer,
@@ -46,7 +46,8 @@ const HeroSection = ({isOpen, toggle}) => {
                         Vive la mejor experiencia con tus seres queridos junto a la naturaleza 
                 </HeroP>
             <HeroBtnWrapper>
-                <Button 
+                <HeroBtnReservas 
+                        to='/daypass'
                         onMouseEnter={onHover} 
                         onMouseLeave ={onHover}
                         primary='true'
@@ -57,8 +58,8 @@ const HeroSection = ({isOpen, toggle}) => {
                         exact='true'
                         offset={-80}
                 >        
-                <Link to='/daypass'>Reserva el pase día </Link> {hover ? <ArrowForward/> : <ArrowRight/>}
-                </Button>
+                Reserva el pase día  {hover ? <ArrowForward/> : <ArrowRight/>}
+                </HeroBtnReservas>
             </HeroBtnWrapper>
         </HeroContent>
        {/*<Reserva> 
