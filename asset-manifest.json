@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecoresot/static/css/main.e1939a34.css",
-    "main.js": "/ecoresot/static/js/main.71ae602e.js",
+    "main.js": "/ecoresot/static/js/main.5d90e47d.js",
     "static/media/video.mp4": "/ecoresot/static/media/video.8877a0027c08d9f13a1b.mp4",
     "static/media/room1.jpg": "/ecoresot/static/media/room1.bc6cb5888f5afa445d44.jpg",
     "static/media/room5.jpg": "/ecoresot/static/media/room5.1a20c558d8725af739cb.jpg",
@@ -27,10 +27,10 @@
     "static/media/nature4.svg": "/ecoresot/static/media/nature4.bb1a3d26d11c5a801bbac4311ac194fb.svg",
     "index.html": "/ecoresot/index.html",
     "main.e1939a34.css.map": "/ecoresot/static/css/main.e1939a34.css.map",
-    "main.71ae602e.js.map": "/ecoresot/static/js/main.71ae602e.js.map"
+    "main.5d90e47d.js.map": "/ecoresot/static/js/main.5d90e47d.js.map"
   },
   "entrypoints": [
     "static/css/main.e1939a34.css",
-    "static/js/main.71ae602e.js"
+    "static/js/main.5d90e47d.js"
   ]
 }
