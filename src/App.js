@@ -14,8 +14,8 @@ import DayPassPage from './pages/daypass';
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/"  element={<Home />} />
+      <Routes basename= {process.env.PUBLIC_URL} >
+        <Route path="/"  element={<Home/>} />
         <Route path="/signin" element={<SigninPage />} />
         <Route path="/daypass" element={<DayPassPage />} />
       </Routes>
