@@ -1,12 +1,5 @@
 import React, {useState} from 'react';
 import Video from '../../videos/video.mp4';
-import {Button} from '../ButtonElements';
-import ReactDOM from 'react-dom';
-import '../Styles/PikersCalendar.css';
-import {MuiPickersUtilsProvider} from '@material-ui/pickers';
-import DateFnsUtils from '@date-io/date-fns';
-import CalendarIn from './Calendario';
-
 import { 
     HeroContainer, 
     HeroBg, 
@@ -18,14 +11,6 @@ import {
     ArrowForward,
     ArrowRight,
     HeroBtnReservas,
-    HeroReservaH2,
-    Reserva,
-    HeroReservaContainer,
-    ReservaComponente,
-    ReservaCheckIn,
-    ReservaCheckOut,
-    ReservaCheckPersona,
-    ReservaCheckBtn
 } from './HeroElements'
 const HeroSection = ({isOpen, toggle}) => {
 
@@ -62,27 +47,6 @@ const HeroSection = ({isOpen, toggle}) => {
                 </HeroBtnReservas>
             </HeroBtnWrapper>
         </HeroContent>
-       {/*<Reserva> 
-            <HeroReservaContainer>
-                <HeroReservaH2>Disfruta de la estadía</HeroReservaH2>
-                <span>Busca tu día ideal para compartir y disfrutar con las personas que más quieres</span>
-                    <ReservaComponente>
-                        <ReservaCheckIn>
-                            Fecha Ingreso
-                        </ReservaCheckIn>
-                        <ReservaCheckOut>
-                            Fecha Salida
-                        </ReservaCheckOut>
-                        <ReservaCheckPersona>
-                            Numero Personas
-                        </ReservaCheckPersona>
-                        <ReservaCheckBtn>
-                            Boton
-                        </ReservaCheckBtn>
-
-                    </ReservaComponente>
-            </HeroReservaContainer>
-  </Reserva> */}
     </HeroContainer>
   )
 }

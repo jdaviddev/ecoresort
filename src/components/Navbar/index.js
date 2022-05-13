@@ -44,13 +44,13 @@ const Navbar = ({toggle}) => {
                 <NavMenu>
                     <NavItem>
                         <NavLinks 
-                            to="about"
+                            to="/promociones"
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
                             offset={-80}
-                        >Sobre Nosotros</NavLinks>
+                        >Promociones</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks 
