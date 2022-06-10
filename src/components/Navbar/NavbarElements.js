@@ -4,7 +4,7 @@ import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
     //background: #003249;
-    background: ${({scrollNav}) => (scrollNav ? '#003249' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? '#276E90' : 'transparent')};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -29,7 +29,7 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width:1100px;
+    max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -118,7 +118,7 @@ export const NavBtnLink = styled(LinkR)`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
-        color: #010606;
+        color: #red;
     }
 
 `

@@ -30,27 +30,27 @@ const Footer = () => {
           <FooterLinksWrapper>
                 <FooterLinksItems>
                     <FooterLinkTitle>Datos de Contacto</FooterLinkTitle>
-                    <FooterLink to="/"><FooterIconData> <FaWhatsapp/> </FooterIconData> Llamadas o WhatsApp: (+593) 998452818</FooterLink>
-                    <FooterLink to="/"><FooterIconData> <GoMail/> </FooterIconData>elmanantialresort@gmail.com</FooterLink>
+                    <FooterLink to="/"><FooterIconData> <FaWhatsapp/> </FooterIconData> Llamadas o WhatsApp: (+593) 000000000</FooterLink>
+                    <FooterLink to="/"><FooterIconData> <GoMail/> </FooterIconData>jefeoperaciones.avimaq@cblarrion.com</FooterLink>
                     
                 </FooterLinksItems>
                 
                 <FooterLinksItems>
                     <FooterLinkTitle>Recomendaciones</FooterLinkTitle>
-                    <FooterLink to="/">Oro Natural House</FooterLink>
-                    <FooterLink to="/">Restaurante Taipa</FooterLink>
+                    <FooterLink to="/">Escuela de Pilotos Agrícolas</FooterLink>
+                    <FooterLink to="/">Taller de reparación aeronautica</FooterLink>
                     
                 </FooterLinksItems>
                 <FooterLinksItems>
                     <FooterLinkTitle>Ubicación</FooterLinkTitle>
-                    <FooterLink to="/"> <FooterIconData> <FaMapMarkedAlt/> </FooterIconData> Valle de Saracay Km3, vía Piñas (a 3 minutos de la Y de Saracay)</FooterLink>
+                    <FooterLink to="/"> <FooterIconData> <FaMapMarkedAlt/> </FooterIconData> Pasaje, Tres Cerritos</FooterLink>
                   
                 </FooterLinksItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
             <SocialMediaWrap>
-                <SocialLogo to='/' onClick={toggleHome}>Eco Resort El Manantial</SocialLogo>
+                <SocialLogo to='/' onClick={toggleHome}>Aero Fumigación Avimaq</SocialLogo>
                 <WebsiteRights> jdaviddev © {new Date().getFullYear()} Todos los derechos reservados</WebsiteRights>
                {// <WebsiteRights> jdaviddev © 2022 </WebsiteRights> 
                }

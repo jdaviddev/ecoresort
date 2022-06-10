@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import Video from '../../videos/video.mp4';
+import logo from '../../images/logo.png';
 import { 
     HeroContainer, 
     HeroBg, 
     VideoBg,
     HeroContent,
-    HeroH1,
+    Logo,
     HeroP,
     HeroBtnWrapper,
     ArrowForward,
@@ -26,9 +27,11 @@ const HeroSection = ({isOpen, toggle}) => {
             <VideoBg autoPlay loop muted src = {Video} type='video/mp4' />
         </HeroBg>
         <HeroContent>
-            <HeroH1>Eco Resort El Manantial</HeroH1>
+           { /* <Logo src={logo} alt='logo' /> */}
+            <figure><Logo><img src={logo} alt='Logo'/> </Logo> </figure>
+           {/* <HeroH1>AVIMAQ</HeroH1> */ }
                 <HeroP>
-                        Vive la mejor experiencia con tus seres queridos junto a la naturaleza 
+                        Acompañamos al gremio Bananero 
                 </HeroP>
             <HeroBtnWrapper>
                 <HeroBtnReservas 
@@ -43,7 +46,7 @@ const HeroSection = ({isOpen, toggle}) => {
                         exact='true'
                         offset={-80}
                 >        
-                Reserva el pase día  {hover ? <ArrowForward/> : <ArrowRight/>}
+                Escuela de Piloto, conoce más  {hover ? <ArrowForward/> : <ArrowRight/>}
                 </HeroBtnReservas>
             </HeroBtnWrapper>
         </HeroContent>

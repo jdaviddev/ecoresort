@@ -6,7 +6,7 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #003249;
+    background: #fff;
 
     @media screen and (max-width: 768px) {
         width: 100%;
@@ -24,7 +24,7 @@ export const ServicesWrapper = styled.div`
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
     padding: 20px 20px 20px 20px;
@@ -43,13 +43,14 @@ export const ServicesWrapper = styled.div`
 
 export const ServicesCard = styled.div`
     width: 100%;
-    background: #fff;
+    background: #276E90;
+    color: #fff;
     display: flex;
     flex-direction: colum;
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 240px;
+    max-height: 400px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
@@ -89,7 +90,7 @@ export const ServicesIcon = styled.img`
 
 export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
-    color: #fff;
+    color: #000;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px) {

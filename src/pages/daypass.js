@@ -9,7 +9,7 @@ const DayPassPage = () => {
     <>
         <CartProvider>
             <PaseDia />
-            <ListRooms />
+           { /* <ListRooms /> */ }
          </CartProvider>
     </>
   )

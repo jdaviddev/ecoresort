@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
     z-index:999;
     width: 100%;
     height: 100%;
-    background: #0d0d0d; //color fondo al abrir el menu mobile
+    background: #276E90; //color fondo al abrir el menu mobile
     display: grid;
     align-items: center;
     top: 0;
