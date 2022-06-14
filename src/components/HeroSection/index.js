@@ -27,9 +27,7 @@ const HeroSection = ({isOpen, toggle}) => {
             <VideoBg autoPlay loop muted src = {Video} type='video/mp4' />
         </HeroBg>
         <HeroContent>
-           { /* <Logo src={logo} alt='logo' /> */}
             <figure><Logo><img src={logo} alt='Logo'/> </Logo> </figure>
-           {/* <HeroH1>AVIMAQ</HeroH1> */ }
                 <HeroP>
                         Acompañamos al gremio Bananero 
                 </HeroP>
